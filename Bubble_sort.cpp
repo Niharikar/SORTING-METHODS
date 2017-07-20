@@ -4,7 +4,7 @@ using namespace std;
 void swap(int *a,int *b)
 {
   int t = *a;
-  *a =*b;
+  *a = *b;
   *b = t;
 }
 
@@ -15,9 +15,9 @@ void Bubble(int arr[],int len)
   while(s)
   {
       s = 0;
-      for(int i = 0;k--;i++)
+      for(int i = 0;i<k;i++)
       {
-        if(arr[i]>arr[i+1])
+        if(arr[i] > arr[i+1])
         {
           s = 1;
           swap(arr[i],arr[i+1]);
