@@ -13,7 +13,7 @@ int Partition(int arr[],int l.int h)
   int i = l-1;
   for(int j = l;j<h;j++)
   {
-    if(a[j]<=a[h])
+    if(arr[j]<=arr[h])
     {
       i++;
       swap(arr[i],arr[j]);
