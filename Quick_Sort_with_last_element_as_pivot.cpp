@@ -39,8 +39,9 @@ void Quick_sort(int a[],int l,int h)
 int main()
 {
   int a[] = {10,80,30,90,40,50,70};
-  Quick_sort(a,0,6);
-  for(int i = 0;i<7;i++)
+  int len = sizeof(a)/sizeof(a[0]);
+  Quick_sort(a,0,len-1);
+  for(int i = 0;i<len;i++)
   {
     cout << a[i] << " ";
   }
