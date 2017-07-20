@@ -10,12 +10,11 @@ void swap(int *a,int *b)
 
 void Bubble(int arr[],int len)
 {
-  int k = len-1;
   int s = 1;
   while(s)
   {
       s = 0;
-      for(int i = 0;i<k;i++)
+      for(int i = 0;i<len-1;i++)
       {
         if(arr[i] > arr[i+1])
         {
