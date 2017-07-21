@@ -13,11 +13,11 @@ void Selection_sort(int arr[],int len)
   
   int l = len-1;
   int f = 0;
-    while(l--)
+    while(l--)                       // loop ends when there is no swap in the inner loop 
     {
-        int min = arr[f];       // taking first element as min for passing of loop
-        int ind = f;            // firt index in following passing of loop, changes when minimum value changes
-        int s = f;              // first index for following passing of loop
+        int min = arr[f];            // taking first element as min for passing of loop
+        int ind = f;                 // firt index in following passing of loop, changes when minimum value changes
+        int s = f;                   // first index for following passing of loop
         for(int i = ++f;i<len;i++)  // starting loop from second element in the pass
         {
             if(arr[i] < min)
